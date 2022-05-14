@@ -973,7 +973,7 @@ const jiraApi = {
         try {
             await Issue.create({
                 "key": issue.KEY,
-                "link": `http://jira.duzon.com:8080/browse/${issue.KEY}`,
+                "link": `http://jira.ballboy.com:8080/browse/${issue.KEY}`,
                 "group": issue.GROUP,
                 "project": issue.PROJECT,
                 "product": issue.PRODUCT,

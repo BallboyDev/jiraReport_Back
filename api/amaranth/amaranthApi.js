@@ -14,7 +14,7 @@ const amaranthApi = {
             getHeader(),
             {}
         ).then((res) => {
-            fs.writeFileSync(`./public/orgfile_duzon_${util.baseDate.today.substring(0, 6)}25.sqlite`, res.data, () => { })
+            fs.writeFileSync(`./public/orgfile_ballboy_${util.baseDate.today.substring(0, 6)}25.sqlite`, res.data, () => { })
         }).catch((err) => {
             util.err(err)
         })

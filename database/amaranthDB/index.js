@@ -5,7 +5,7 @@ const util = require('../../utils')
 
 /** Amaranth10 SQLITE DB 파일 월별 UPDATE */
 const db = () => {
-    let exists = fs.existsSync(`../../public/orgfile_duzon_${util.baseDate.today.substring(0, 6)}25.sqlite`)
+    let exists = fs.existsSync(`../../public/orgfile_ballboy_${util.baseDate.today.substring(0, 6)}25.sqlite`)
 
     if (!exists) {
         util.callApi.get(
@@ -13,13 +13,13 @@ const db = () => {
             getHeader(),
             {}
         ).then((res) => {
-            fs.writeFileSync(`../../public/orgfile_duzon_${util.baseDate.today.substring(0, 6)}25.sqlite`, res.data, () => { })
-            return new sqlite3.Database(`../../public/orgfile_duzon_${util.baseDate.today.substring(0, 6)}25.sqlite`)
+            fs.writeFileSync(`../../public/orgfile_ballboy_${util.baseDate.today.substring(0, 6)}25.sqlite`, res.data, () => { })
+            return new sqlite3.Database(`../../public/orgfile_ballboy_${util.baseDate.today.substring(0, 6)}25.sqlite`)
         }).catch((err) => {
             util.err(err)
         })
     } else {
-        return new sqlite3.Database(`../../public/orgfile_duzon_${util.baseDate.today.substring(0, 6)}25.sqlite`)
+        return new sqlite3.Database(`../../public/orgfile_ballboy_${util.baseDate.today.substring(0, 6)}25.sqlite`)
     }
 }
 
