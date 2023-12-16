@@ -18,3 +18,4 @@
 
 ## 구조도
 ![구조도](./bluePrint.png)
+![구조도](https://raw.githubusercontent.com/BallboyDev/jirareport_back/main/bluePrint.png)
