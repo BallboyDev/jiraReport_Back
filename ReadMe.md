@@ -17,4 +17,4 @@
 - sqlite - sqlite3
 
 ## 구조도
-![구조도](https://github.com/ballboyDev/jirareport_back/bluePrint.png)
+![구조도](./bluePrint.png)
